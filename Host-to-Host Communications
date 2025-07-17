@@ -1,1 +1,28 @@
+MY PERSONAL SUMMARY
 
+A Network
+  A network is defined by having devices connected to each other, being able to communicate, exchange data, avail applications, and use resources. A "very" basic network would have computers,
+printers, and servers connected to a switch, that is then also connected to a router. This creates a Local Area Network (LAN), within this network, the devices are able to communicate to each other
+and have access to the internet. To remove the high chances of encountering a bad actor, a firewall is utilized. It is possible to have two different local area networks to connect to each other,
+if a connection is made this would then be called a Wide Area Network (WAN).
+
+The OSI Model
+  The Open System Interconnection (OSI) Model, is a ISO (International Organization for Standardization) standard framework. It is a general purpose network that characterizes and standardizes
+how computers communicate with one another in a network. It is a seven layered approach to data transmission that divides operations to specifc related groups.
+  7. Application
+  6. Presentation
+  5. Session
+  4. Transport
+  3. Network         || Routers
+  2. Data Link       || Switches
+  1. Physical        || Cables, Hubs
+
+Example how the OSI Model works with an email:
+  When an email is composed and sent, it begins its journey at the Application layer (Layer 7) of the OSI model.  Presentation layer, and to the Session layer.	From there, the data is passed down 
+through the Presentation layer (Layer 6), where data formatting and encryption may occur, and then to the Session layer (Layer 5), which manages communication sessions.
+These three layers—Application, Presentation, and Session—are considered the upper layers and are typically handled by software developers. Next, the data reaches the Transport layer (Layer 4), 
+where it is segmented and assigned source and destination port numbers—this determines whether the data is headed for an email service (like SMTP), a web service (like HTTPS), and so on.
+The Network layer (Layer 3) adds logical addressing, including the source and destination IP addresses, to route the data across networks. Afterward, the Data Link layer (Layer 2) adds 
+physical addressing using MAC addresses, especially important in Ethernet-based communication. Finally, at the Physical layer (Layer 1), the data is converted into electrical signals or 
+light pulses and transmitted through a physical medium such as a cable.  At the receiving end, the process is reversed—decapsulation occurs layer by layer until the email 
+is fully reconstructed at the Application layer.
